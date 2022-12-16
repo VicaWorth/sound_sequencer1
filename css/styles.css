@@ -1,37 +1,74 @@
 body {
-    background: rgba(39, 34, 34, 0.986);
-  }
+  background: rgba(50, 50, 50);
+}
+
+h1{
+  color: rgb(250, 69, 211);
+  text-align: left;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+}
+
+.play-button {
+  display: grid;
+  background-color:white;
+  font-size: 50px;
+  text-align: center;
+  align-content: center;
+}
+
+h3{
+  text-align: center;
+  font-size: large;
+}
+
+.whole-table {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.piano-column {
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
   
-  h1{
-    color: cyan;
-    text-align: center;
-  }
-  h3{
-    margin-top: 350px;
-    text-align: center;
-    font-size: large;
-  }
-  .container {
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-  }
-  
+.key {
+  margin: 0 2px;
+}
+
 .white {
-    position: relative;
-    background: rgb(241, 240, 240);
-    width: 10%;
-    height: 400px;
-    margin: 0 2px;
-  }
-  
-  .white.black:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    background: rgb(17, 11, 11);
-    right: -25%;
-    width: 50%;
-    height: 50%;
-    z-index: 1;
-  }
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 255, 60);
+}
+
+.gray {
+  background-color: gray;
+  border: 2px solid red;
+}
+
+.black {
+  background-color: rgb(22, 22, 22);
+  color: white;
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.quarter {
+  border-right: 3px solid yellow;
+}
+
+.octave {
+  border-bottom: 4px dashed purple;
+}
+
+div[selected="1"] {
+  color: gold;
+}
+
+div[selected="2"] {
+  color: magenta;
+}
